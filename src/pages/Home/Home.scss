@@ -1,0 +1,27 @@
+.head{
+    max-height: 880px;
+    height: 100vh;
+    background-color: rgba(47,81,128,0.35);
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: "";
+        position: absolute;
+        left: -10%;
+        bottom: -10%;
+        width: 61%;
+        height: 18vh;
+        background-color: white;
+        transform: rotateZ(7deg);
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: -10%;
+        bottom: -10%;
+        width: 61%;
+        height: 18vh;
+        background-color: white;
+        transform: rotateZ(-7deg);
+    }
+}
