@@ -5,9 +5,23 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
 function Header() {
+
+  const [scrol, setScrol] = React.useState(false)
+  const offSet = 140;
+
+  const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
+
+  window.addEventListener('scroll', () => {
+    if (getTop() > offSet) {
+      setScrol(true)
+    } else {
+      setScrol(false)
+    }
+  })
+  
   return (
     <div className='header'>
-        <nav className='nav'>
+        <nav className={scrol ? 'nav-fixed' : 'nav'}>
           <a className='logo' href="#logo">Idesk</a>
           <ul className='nav-list'>
             <li><Link to='/product'>ПРОДУКЦИЯ</Link></li>

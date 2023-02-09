@@ -1,0 +1,44 @@
+.chat{
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    width: 4%;
+    height: 7%;
+    background-color: #2FB644;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    svg{
+        color: white;
+        font-size: 40px;
+        position: relative;
+    }
+    button{
+        position: relative;
+        &::before{
+            content: "";
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #2FB644;
+            animation: ring 5s ease infinite;
+        }
+    }
+    
+}
+
+@keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+}

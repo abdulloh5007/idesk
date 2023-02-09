@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "position: sticky",
+          "-webkit-text-size-adjust",
+          "-webkit-tap-highlight-color"
+        ]
+      }
+    ]
+  }
+}
