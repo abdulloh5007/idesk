@@ -1,10 +1,10 @@
 import React from 'react'
 import './Choice.scss'
 
-function Сhoice() {
+function Choice() {
   return (
-    <div>Сhoice</div>
+    <div>Choice</div>
   )
 }
 
-export default Сhoice
+export default Choice
