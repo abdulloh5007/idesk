@@ -10,7 +10,7 @@ function Header() {
   const offSet = 140;
 
   const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
-
+  
   window.addEventListener('scroll', () => {
     if (getTop() > offSet) {
       setScrol(true)
