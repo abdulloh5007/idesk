@@ -5,6 +5,7 @@ import Chat from '../../components/Home/Chat/Chat'
 import Comfort from '../../components/Home/Comfort/Comfort'
 import Compare from '../../components/Home/Compare/Compare'
 import Examples from '../../components/Home/Examples/Examples'
+import Footer from '../../components/Home/Footer/Footer'
 import Header from '../../components/Home/Header/Header'
 import Intro from '../../components/Home/Intro/Intro'
 import Choice from '../../components/Home/Сhoice/Choice'
@@ -26,6 +27,7 @@ function Home() {
       <Compare/>
       <Comfort/>
       <Examples/>
+      <Footer/>
     </div>
   )
 }
