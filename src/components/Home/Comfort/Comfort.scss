@@ -1,0 +1,88 @@
+.comfort{
+    &__container{
+        &__title{
+            h2{
+                color: #000;
+                font-weight: bold;
+                font-family: 'Open Sans', sans-serif;
+                text-align: center;
+            }
+        }
+        &__wrapper{
+            padding: 30px 160px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__left{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                height: 400px;
+                padding-bottom: 50px;
+                p{
+                    text-align: end;
+                    font-family: 'Open Sans', sans-serif;
+                    color: #88888A;
+                }
+            }
+            &__list{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                height: 400px;
+                h4{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: #DB4F2C;
+                    border: 1px solid #fff;
+                    text-align: center;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    font-weight: bold;
+                }
+                h3{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: #DB4F2C;
+                    border: 1px solid #fff;
+                    text-align: center;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    font-weight: bold;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        display: flex;
+                        width: 2px;
+                        height: 63px;
+                        background-color:#000;
+                        position: absolute;
+                        top: 52px;
+                    }
+                }
+            }
+            &__right{
+                height: 400px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                padding-left: 0;
+                margin-top: 150px;
+                padding-top: 40px;
+                p{
+                    color: #88888A;
+                }
+            }
+        }
+    }
+}
