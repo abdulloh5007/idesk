@@ -31,27 +31,31 @@
             flex-direction: column;
             margin-top: 40px;
             z-index: 1;
+            position: relative;
             &-img{
                 padding: 40px;
-                position: relative;
-                &::before{
-                    box-shadow: 0px 0px 10px 8px #DEE4EE;
-                    content: "";
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    transform: rotate(45deg);
-                    animation: rotateBox 2s both ease-in-out;
-                    background-color: white;
-                    z-index: -1;
-                }
-                img{
-                    width: 100px;
-                    height: 100px;
-                    cursor: pointer;
-                }
+                background-color: white;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 0;
+                z-index: -1;
+            }
+            .animationBox{
+                padding: 40px;
+                background-color: white;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 0;
+                z-index: -1;
+                animation: rotateBox 2s both ease-in-out;
+            }
+            img{
+                width: 100px;
+                height: 100px;
+                cursor: pointer;
+                margin-top: 50px;
             }
             b{
                 color: #18519C;
@@ -59,6 +63,7 @@
                 font-weight: 700;
                 width: 240px;
                 text-align: center;
+                margin-top: 20px;
             }
             p{
                 color: #848485;
