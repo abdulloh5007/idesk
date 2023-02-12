@@ -17,7 +17,7 @@ function ScrollTop() {
 
   return (
     <div className={scrol ? 'scrollAnimate' : 'scrollTop'}>
-        <button><i className="bi bi-chevron-up"></i></button>
+        <button onClick={()=> document.scrollingElement.scrollTo(0, 0)}><i className="bi bi-chevron-up"></i></button>
     </div>
   )
 }
