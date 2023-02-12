@@ -65,7 +65,7 @@ const actions = [
 function Chat() {
   return (
     <div onMouseMove={()=> document.body.style.background = '#000'} className="chat" style={{background: '#2FB644'}}>
-      <Box sx={{background: '#2FB644', position: 'fixed', right: 0, bottom: '1%'}} >
+      <Box sx={{background: '#2FB644', position: 'fixed', right: 0, bottom: '1%', zIndex: '999999'}} >
         <SpeedDial
           ariaLabel="SpeedDial basic example"
           sx={{ position: 'absolute', bottom: 16, right: 16 }}
