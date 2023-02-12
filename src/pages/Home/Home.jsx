@@ -1,5 +1,4 @@
 import React from 'react'
-import { Table } from 'react-bootstrap-icons'
 import Advantages from '../../components/Home/Advantages/Advantages'
 import Chat from '../../components/Home/Chat/Chat'
 import Comfort from '../../components/Home/Comfort/Comfort'
@@ -9,6 +8,7 @@ import Footer from '../../components/Home/Footer/Footer'
 import Header from '../../components/Home/Header/Header'
 import Intro from '../../components/Home/Intro/Intro'
 import ScrollTop from '../../components/Home/ScrollTop/ScrollTop'
+import Table from '../../components/Home/Table/Table'
 import Choice from '../../components/Home/Сhoice/Choice'
 import './Home.scss'
 
