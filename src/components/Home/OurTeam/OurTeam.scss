@@ -1,0 +1,74 @@
+.ourTeam{
+    padding-top: 60px;
+    padding-bottom: 150px;
+    &__container{
+        &__title{
+            h2{
+                font-weight: bold;
+                font-size: 38px;
+                color: #000;
+                text-align: center;
+            }
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 100px;
+           li{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            div{
+                padding: 15px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 150px;
+                    height: 165px;
+                    background: linear-gradient(90deg, #bfd9e8,#01A1FF,#bfd9e8);
+                    border-radius: 50%;
+                    z-index: -1;
+                    position: absolute;
+                    top: 8px;
+                    left: 65px;
+                    transform: translate(-20px);
+                    transform: rotate(145deg);
+                    animation: before 3s infinite;
+                }
+                
+                img{
+                    border: 5px solid #fffcff;
+                    width: 150px;
+                    height: 150px;
+                    background-color: #E2E6EB;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                }
+                h4{
+                    padding-top: 15px;
+                }
+            }
+            @keyframes before {
+                25%{
+                    transform: rotate(-215deg);
+                }
+                50%{
+                    transform: rotate(-215deg);
+                }
+                75%{
+                    transform: rotate(-215deg);
+                }
+                100%{
+                    transform: rotate(-215deg);
+                }
+            }
+           }
+        }
+    }
+}
