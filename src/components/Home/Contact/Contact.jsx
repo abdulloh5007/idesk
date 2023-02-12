@@ -21,8 +21,8 @@ function Contact() {
           <br />
           <a href="mailto:support@idesk.su" target='_blank'>support@idesk.su</a>
           <br />
-          <i className="bi bi-youtube"></i>
-          <i className="bi bi-youtube"></i>
+          <a href="#yt"><i className="bi bi-youtube"></i></a>
+          <a href="#yt"><i className="bi bi-youtube"></i></a>
         </div>
       </div>
     </div>

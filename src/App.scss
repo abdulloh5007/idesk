@@ -8,4 +8,11 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    background-color: white !important;
+    &::before{
+        background-color: white;
+    }
+    &::after{
+        background-color: white;
+    }
 }
