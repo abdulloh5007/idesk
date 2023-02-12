@@ -5,7 +5,7 @@ function Chat() {
 
   return (
     <div className='chat'>
-        <button></button>    
+        {/* <button></button>    */}
     </div>
   )
 }
