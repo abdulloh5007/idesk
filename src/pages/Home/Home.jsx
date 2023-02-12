@@ -8,6 +8,7 @@ import Examples from '../../components/Home/Examples/Examples'
 import Footer from '../../components/Home/Footer/Footer'
 import Header from '../../components/Home/Header/Header'
 import Intro from '../../components/Home/Intro/Intro'
+import ScrollTop from '../../components/Home/ScrollTop/ScrollTop'
 import Choice from '../../components/Home/Сhoice/Choice'
 import './Home.scss'
 
@@ -21,6 +22,7 @@ function Home() {
         </div>
       </div>
       <Chat/>
+      <ScrollTop/>
       <Advantages/>
       <Choice/>
       <Table/>

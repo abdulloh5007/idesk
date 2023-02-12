@@ -15,7 +15,7 @@
     }
     &-cards{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 40px;
@@ -32,6 +32,28 @@
             margin-top: 40px;
             z-index: 1;
             position: relative;
+            .animateImg{
+                overflow: hidden;
+                animation: tranlateY 2s ease both;
+            }
+            .animateImg2{
+                overflow: hidden;
+                animation: tranlateY2 2s ease both;
+            }
+            .animateImg3{
+                overflow: hidden;
+                animation: tranlateY3 2s ease both;
+            }
+            .animateImg4{
+                overflow: hidden;
+                animation: tranlateY4 2s ease both;
+            }
+            img{
+                width: 100px;
+                height: 100px;
+                cursor: pointer;
+                margin-top: 50px;
+            }
             &-img{
                 padding: 40px;
                 background-color: white;
@@ -50,12 +72,6 @@
                 top: 0;
                 z-index: -1;
                 animation: rotateBox 2s both ease-in-out;
-            }
-            img{
-                width: 100px;
-                height: 100px;
-                cursor: pointer;
-                margin-top: 50px;
             }
             b{
                 color: #18519C;
@@ -86,5 +102,65 @@
     }
     100%{
         transform: rotateZ(225deg);
+    }
+}
+
+@keyframes tranlateY {
+    0%{
+        transform: translateY(100px);
+        opacity: 0.6;
+    }
+    50%{
+        transform: translateY(-20px);
+        opacity: 0.8;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tranlateY2 {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0.6;
+    }
+    50%{
+        transform: translateY(20px);
+        opacity: 0.8;
+    }
+    to{
+        transform: translateY(-0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tranlateY3 {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0.6;
+    }
+    50%{
+        transform: translateX(20px);
+        opacity: 0.8;
+    }
+    to{
+        transform: translateX(-0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tranlateY4 {
+    0%{
+        transform: translateX(100px);
+        opacity: 0.6;
+    }
+    50%{
+        transform: translateX(-20px);
+        opacity: 0.8;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
     }
 }
