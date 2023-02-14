@@ -3,14 +3,17 @@ import './Intro.scss'
 
 import Typed from 'react-typed';
 import { btn, intro, introRight } from '../../../data/data';
+import { Context } from '../../../Context/Context';
 
 const types = []
 
 function Intro() {
+  const {lang} = React.useContext(Context)
+
   intro.map((e) => {
     e.typed.map((q) => {
       if(!types.includes(q.text_ru)){
-        types.push(q[`text_ru`])
+        types.push(q[`text_${lang}`])
       }
       return types
     })
@@ -25,8 +28,8 @@ function Intro() {
           {
             intro?.map((e,i) => (
               <div key={i} className="intro-left">
-                <b>{e[`title_ru`]}</b>
-                <p>для <span></span>
+                <b>{e[`title_${lang}`]}</b>
+                <p>{lang === 'uz' ? 'uchun' : 'для'} <span></span>
                 <Typed
                   key={types}
                   strings={[`${types[0]}`, `${types[1]}`, `${types[2]}`, `${types[3]}`]}
@@ -38,7 +41,7 @@ function Intro() {
                 <div className="intro-left-btns">
                   {
                     btn?.map((e,i) => (
-                      <button className={e.class} key={i}>{e[`title_ru`]}</button>
+                      <button className={e.class} key={i}>{e[`title_${lang}`]}</button>
                     ))
                   }
                 </div>
@@ -52,7 +55,7 @@ function Intro() {
               {
                 introRight?.map((e,i) => (
                   <li key={i}>
-                    {e[`title_ru`]}
+                    {e[`title_${lang}`]}
                   </li>
                 ))
               }
