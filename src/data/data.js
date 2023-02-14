@@ -1,3 +1,63 @@
+export const btn = [
+    {
+        id: 1,
+        title_ru: 'Рассчитать стоимость',
+        class: 'howMuch',
+    },
+    {
+        id: 2,
+        title_ru: 'Заказать on-line презентацию',
+        class: 'order'
+    }
+]
+
+export const introRight = [
+    {
+        id: 1,
+        title_ru: 'для записи обучающих роликов',
+    },
+    {
+        id: 2,
+        title_ru: 'для дистанционного обучения',
+    },
+    {
+        id: 3,
+        title_ru: 'для вебинаров и трансляций',
+    }
+]
+
+export const intro = [
+    {
+        id: 1,
+        title_ru: 'МЫ ПРОИЗВОДИМ ИНТЕРАКТИВНЫЕ ВИДЕОСТУДИИ',
+        typed: [
+            {
+                id: 1,
+                text_ru: 'дистанцианального образование'
+            },
+            {
+                id: 2,
+                text_ru: 'школ и университетов'
+            },
+            {
+                id: 3,
+                text_ru: 'бизнеса'
+            },
+            {
+                id: 4,
+                text_ru: 'блогерова и онлайн школ'
+            }
+        ]
+    }
+]
+
+export const advantageTop = [
+    {
+        id: 1,
+        title_ru: 'Преимущества наших видеостудий'
+    }
+]
+
 export const advantages = [
     {
         id: 1,
